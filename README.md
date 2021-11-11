@@ -1,8 +1,18 @@
 # Conversion-Calculator
-5 calculators built in Python to calculate Perimeter, Area, Volume, Surface Area and Area of 4 walls of different shapes.
+Struggling to calculate Perimeter, Area, Volume, Surface Area, Curved Surface Area and Area of 4 walls of different shapes? 
+Here are few codes built in Python to solve your problem.
 
 The codes are written in simple and beginner-friendly Python coding. The calculators use a simple Python module named "Math" 
 which comes pre-installed with all the versions of Python and allows us to use the calculators and carry on the calculators.
+
+All the operations are listed below:
+     
+     1. Perimeter
+     2. Area
+     3. Volume
+     4. Surface Area
+     5. Curved Surface Area
+     6. Area of 4 walls
 
 All the shapes covered in the function are listed below:
 
@@ -13,4 +23,9 @@ All the shapes covered in the function are listed below:
      5. Parallelogram - Perimeter/Area
      6. Cube - Volume/Surface Area/Area of 4 walls
      7. Cuboid - Volume/Surface Area/Area of 4 walls
-     8. Cyclinder - Volume/Surface Area
+     8. Cyclinder - Volume/Surface Area/Curved Surface Area
+
+What's New?
+
+     1. Added Curved Surface Area to existing codes. (curved-sa.py)
+     2. Updated the README
