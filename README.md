@@ -13,8 +13,9 @@ All the operations are listed below:
      4. Surface Area
      5. Curved Surface Area
      6. Area of 4 walls
+     7. Simple Interest
 
-All the shapes covered in the function are listed below:
+All the shapes covered in the calculators are listed below:
 
      1. Square - Perimeter/Area/Volume
      2. Rectangle - Perimeter/Area/Volume
@@ -27,5 +28,5 @@ All the shapes covered in the function are listed below:
 
 What's New?
 
-     1. Added Curved Surface Area to existing codes. (curved-sa.py)
-     2. Updated the README
+     1. Added Simple Interest to existing codes. (simple-interest.py)
+     2. Updated the README.md
