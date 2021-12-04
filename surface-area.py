@@ -1,10 +1,10 @@
 # The below function claculates the Surface Area of a shapes
 # Created by Agamdeep Singh / CodeWithAgam
-# Insta: @coderagam001 / @agamdeep_21
 # Youtube: CodeWithAgam
 # Github: CodeWithAgam
-
-from math import *
+# Instagram: @agamdeep_21, @coderagam001
+# Twitter: @CoderAgam001
+# Linkdin: Agamdeep Singh
 
 def calculate_sa(name):
     name = name.lower()

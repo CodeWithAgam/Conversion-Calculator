@@ -1,10 +1,10 @@
 # The below function claculates the Area of 4 walls of Cube and Cuboid
 # Created by Agamdeep Singh / CodeWithAgam
-# Insta: @coderagam001 / @agamdeep_21
 # Youtube: CodeWithAgam
 # Github: CodeWithAgam
-
-from math import *
+# Instagram: @agamdeep_21, @coderagam001
+# Twitter: @CoderAgam001
+# Linkdin: Agamdeep Singh
 
 def calculate_4wa(name):
     name = name.lower()
@@ -32,7 +32,7 @@ def calculate_4wa(name):
         print("Calculator: Sorry! This shape is not available")
 
 if __name__ == "__main__" :
-    print("Calculate  Area of 4 Walls of Cube and Cuboid")
+    print("Calculate Area of 4 Walls of Cube and Cuboid")
     print("Calculator: Which shape's 4 Wall's Area you want to calculate?")
     shape_name = input("User: ")
     calculate_4wa(shape_name)

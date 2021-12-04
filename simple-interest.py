@@ -1,10 +1,10 @@
 # The below function claculates the Volume of a shapes
 # Created by Agamdeep Singh / CodeWithAgam
-# Insta: agamdeep_21
 # Youtube: CodeWithAgam
 # Github: CodeWithAgam
-
-from math import *
+# Instagram: @agamdeep_21, @coderagam001
+# Twitter: @CoderAgam001
+# Linkdin: Agamdeep Singh
 
 print("Calculate Simple Interest")
 
