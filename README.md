@@ -14,6 +14,7 @@ All the operations are listed below:
      5. Curved Surface Area
      6. Area of 4 walls
      7. Simple Interest
+     8. Body Mass Index (BMI)
 
 All the shapes covered in the calculators are listed below:
 
@@ -28,5 +29,5 @@ All the shapes covered in the calculators are listed below:
 
 What's New?
 
-     1. Added Simple Interest to existing codes. (simple-interest.py)
+     1. Added Body Mass Index to existing codes. (bmi.py)
      2. Updated the README.md
