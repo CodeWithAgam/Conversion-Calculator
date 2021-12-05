@@ -19,5 +19,5 @@ def calculate_BMI():
     print(f"Your Body Mass Index is {BMI}kg/m2")
 
 
-print("the BMI or Body Mass Index")
+print("Calculate the BMI or Body Mass Index")
 calculate_BMI()
