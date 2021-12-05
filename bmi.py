@@ -18,6 +18,6 @@ def calculate_BMI():
     # Print the output
     print(f"Your Body Mass Index is {BMI}kg/m2")
 
-if __name__ == "__main__" :
-    print("the BMI or Body Mass Index")
-    calculate_BMI()
+
+print("the BMI or Body Mass Index")
+calculate_BMI()
