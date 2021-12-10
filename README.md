@@ -1,8 +1,7 @@
 # Conversion-Calculator
-```
+
 Struggling to calculate Perimeter, Area, Volume, Surface Area, Curved Surface Area and Area of 4 walls of different shapes? 
 Here are few codes built in Python to solve your problem.
-```
 
 ### The codes are written in simple and beginner-friendly Python with all the pre-included stuff.
 
