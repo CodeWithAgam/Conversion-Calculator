@@ -6,54 +6,91 @@
 # Twitter: @CoderAgam001
 # Linkdin: Agamdeep Singh
 
-def calculate_area(name):
-    name = name.lower()
+import math
+
+def calculate_area(shape_selected):
+
+    shape_selected = shape_selected.input("Which shape's Area you want to calculate: ").lower()
 
     # check for the conditions
-    if name == "rectangle":
-        lenght = float(input("Length of Rectangle: "))
-        breadth = float(input("Breadth of Rectangle: "))
+    if shape_selected == "rectangle":
+        length = float(input("Enter the Length of Rectangle: "))
+        breadth = float(input("Enter the Breadth of Rectangle: "))
+        unit = input("Enter the Measuring Unit: ")
         
-        # calculate area of rectangle
-        rect_area = lenght * breadth
-        print(f"The area of Rectangle is {rect_area}")
-
-    elif name == "square":
-        side = float(input("Lenght of side of square: "))
+        # calculate the area of rectangle
+        rect_area = round(length * breadth, 2)
         
-        # calculate area of square
-        square_area = side * side
-        print(f"The area of Square is {square_area}")
+        print(f"\nThe Area of Rectangle is {rect_area}{unit} squared.")
 
-    elif name == "triangle":
-        heightTri = float(input("Triangle's height: "))
-        baseTri = float(input("Triangle's base length: "))
+    elif shape_selected == "square":
+        side = float(input("Enter the length of Square's Side: "))
+        unit = input("Enter the Measuring Unit: ")
+
+        # calculate the area of square
+        square_area = round(side * side, 2)
+        print(f"\nThe Area of Square is {square_area}{unit} squared.")
+
+    elif shape_selected == "trapezium":
+        trap_side1 = float(input("Enter the length of 1st Parallel Side: "))
+        trap_side2 = float(input("Enter the length of 2nd Parallel Side: "))
+        trap_height = input("Please enter height ")
+        unit = input("Enter the Measuring Unit: ")
         
-        # calculate area of triangle
-        triangle_area = 0.5 * baseTri * heightTri
-        print(f"The area of Triangle is {triangle_area}")
+        # calculate the area of trapezium
+        trapezium_area = round(0.5 * (trap_side1 + trap_side2) * trap_height, 2)
+        print(f"\nThe Area of Trapezium is {trapezium_area}{unit} squared.")
 
-    elif name == "circle":
-        radius = float(input("Circle's radius: "))
+    elif shape_selected == "triangle":
+        
+        triangle_type = int(input("Type 1 for Heron's Formula or 2 for Right Angled/Normal Triangle: ")).lower()
 
-        # calculate area of circle
-        circle_area = 3.14 * radius * radius
-        print(f"The area of Circle is {circle_area}")
+        if triangle_type == 1:
+            side1 = input("Enter the length of Side1: ")
+            side2 = input("Enter the length of Side2: ")
+            side3 = input("Enter the length of Side3: ")
+            semi_perimeter = (side1 + side2 + side3) / 2
+            unit = input("Enter the Measuring Unit: ")
+
+            # calculate the area of triangle
+            triangle_area = round(math.sqrt(semi_perimeter * (semi_perimeter - side1) * (semi_perimeter - side2) * (semi_perimeter -side3)), 2)
+            print(f"\nThe Area of Triangle is {triangle_area}{unit} squared.")
+
+        elif triangle_type == 2:
+            height_tri = float(input("Enter the Triangle's height: "))
+            base_tri = float(input("Enter the Triangle's base length: "))
+            unit = input("Enter the Measuring Unit: ")        
             
-    elif name == "parallelogram":
-        baseParallelogram = float(input("Parallelogram's base: "))
-        heightParallelogram = float(input("Parallelogram's height: "))
+            # calculate the area of right angled triangle
+            triangle_area = round(0.5 * base_tri * height_tri, 2)
+            print(f"\nThe Area of Right Angled Triangle is {triangle_area}{unit} squared.")
 
+        else:
+            print("Error! Please select 1 or 2.")
+
+    elif shape_selected == "circle":
+        radius = float(input("Enter the Circle's radius: "))
+        unit = input("Enter the Measuring Unit: ")
+        
+        # calculate area of circle
+        circle_area = round(math.pi * radius * radius, 2)
+        print(f"\nThe Area of Circle is {circle_area}{unit} squared.")
+            
+    elif shape_selected == "parallelogram":
+        base_parallelogram = float(input("Enter the Parallelogram's base: "))
+        height_parallelogram = float(input("Enter the Parallelogram's height: "))
+        unit = input("Enter the Measuring Unit: ")
+        
         # calculate area of parallelogram
-        parallelogram_area = baseParallelogram * heightParallelogram
-        print(f"The area of Parallelogram is {parallelogram_area}")
+        parallelogram_area = round(base_parallelogram * height_parallelogram, 2)
+        print(f"\nThe area of Parallelogram is {parallelogram_area}{unit} squared.")
         
     else:
         # this message gets printed if a shape entered by the user dosen't matches to the above conditions/shapes
-        print("Calculator: Sorry! This shape is not available")
+        print("\nSorry! This shape is not available")
 
-if __name__ == "__main__" :
+def Main():
     print("Calculate Area")
-    print("Calculator: Which shape's area you want to calculate?")
-    shape_name = input("User: ")
-    calculate_area(shape_name)
+    calculate_area()
+
+Main()
