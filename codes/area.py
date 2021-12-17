@@ -92,5 +92,4 @@ def calculate_area(shape_selected):
 def Main():
     print("Calculate Area")
     calculate_area()
-
 Main()
