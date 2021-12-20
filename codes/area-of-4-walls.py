@@ -1,4 +1,4 @@
-# The below function claculates the Area of 4 walls of Cube and Cuboid
+# The below program claculates the Area of 4 walls of Cube and Cuboid.
 # Created by Agamdeep Singh / CodeWithAgam
 # Youtube: CodeWithAgam
 # Github: CodeWithAgam
@@ -6,33 +6,28 @@
 # Twitter: @CoderAgam001
 # Linkdin: Agamdeep Singh
 
-def calculate_4wa(name):
-    name = name.lower()
+def calculate_4wa():
+    print("Calculate Area of 4 Walls of Cube or Cuboid!")
+    name = input("Which shape you want to calculate: ").lower()
 
     # check for the conditions
     if name == "cuboid" or name == "rectangle":
-        lenght = float(input("Length of Cuboid: "))
-        breadth = float(input("Breadth of Cuboid: "))
-        height = float(input("Height of Cuboid: "))
+        length = float(input("Enter the length of Cuboid: "))
+        breadth = float(input("Enter the breadth of Cuboid: "))
+        height = float(input("Enter the height of Cuboid: "))
+        unit = input("Enter the Measuring Unit: ")
         
-        # calculate  Area of rectangle
-        cuboid_4wa = 2 * ((lenght * breadth) + (breadth * height) + (height * lenght))
-        print(f"The  Area of rectangle is {cuboid_4wa}")
+        cuboid_4wa = 2 * height * (length + breadth)
+        print(f"The Area of 4 Walls of Cuboid is {cuboid_4wa}{unit} squared.")
 
     elif name == "cube" or name == "square":
-        side = float(input("Lenght of side of Cube: "))
+        side = float(input("Enter the length of side of Cube: "))
+        unit = input("Enter the Measuring Unit: ")
         
-        # calculate  Area of square
-        square_4wa = 6 * (side * side)
-        print(f"The  Area of square is {square_4wa}")
+        square_4wa = 6 * (side ** 2)
+        print(f"The Area of 4 wwalls of Cube is {square_4wa}{unit} squared.")
 
-        
     else:
-        # this mes4wage gets printed if a shape entered by the user dosen't matches to the above conditions/shapes
         print("Calculator: Sorry! This shape is not available")
 
-if __name__ == "__main__" :
-    print("Calculate Area of 4 Walls of Cube and Cuboid")
-    print("Calculator: Which shape's 4 Wall's Area you want to calculate?")
-    shape_name = input("User: ")
-    calculate_4wa(shape_name)
+calculate_4wa()
