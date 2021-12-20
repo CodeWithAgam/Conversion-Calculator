@@ -6,12 +6,18 @@
 # Twitter: @CoderAgam001
 # Linkdin: Agamdeep Singh
 
-print("Calculate Curved Surface Area of Right Circular Cyclinder")
+import math
 
-# Ask for the inputs
-radius = float(input("Cyclinder's radius: "))
-height = float(input("Cyclinder's height: "))
+def curved_sa():
+    print("Calculate Curved Surface Area of Right Circular Cyclinder")
 
-# Calculate the Curved Surface Area and print it
-cyclinder_csa = 2 * 3.14 * radius * height
-print(f"The Curved SA of your Cyclinder is {cyclinder_csa}")
+    # Ask for the inputs
+    radius = float(input("Cyclinder's radius: "))
+    height = float(input("Cyclinder's height: "))
+    unit = input("Enter the Measuring Unit: ")
+
+    # Calculate the Curved Surface Area and print it
+    cyclinder_csa = 2 * math.pi * radius * height
+    print(f"The Curved SA of your Cyclinder is {cyclinder_csa}{unit} squared.")
+
+curved_sa()
