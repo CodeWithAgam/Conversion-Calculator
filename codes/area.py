@@ -8,9 +8,9 @@
 
 import math
 
-def calculate_area(shape_selected):
+def calculate_area():
 
-    shape_selected = shape_selected.input("Which shape's Area you want to calculate: ").lower()
+    shape_selected = input("Which shape's Area you want to calculate: ").lower()
 
     # check for the conditions
     if shape_selected == "rectangle":

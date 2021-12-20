@@ -8,9 +8,9 @@
 
 import math
 
-def calculate_perimeter(shape_selected):
+def calculate_perimeter():
 
-    shape_selected = shape_selected.input("Which shape's Perimeter you want to calculate: ").lower()
+    shape_selected = input("Which shape's Perimeter you want to calculate: ").lower()
     
     if shape_selected == "rectangle":
         length = float(input("Enter the Length of Rectangle: "))
@@ -19,7 +19,7 @@ def calculate_perimeter(shape_selected):
 
         # Calculate the Perimeter of the Rectangle 
         rect_perimeter = round(2 * (length + breadth), 2)
-        print(f"\nThe Perimeter of Rectangle is {rect_perimeter}{unit} squared.")
+        print(f"\nThe Perimeter of Rectangle is {rect_perimeter}{unit}.")
     
     elif shape_selected == "square":
         side = float(input("Enter the Side of Square: "))
@@ -27,7 +27,7 @@ def calculate_perimeter(shape_selected):
 
         # Calculate the Perimeter of the Square
         square_perimeter = round(4 * side, 2)
-        print(f"\nThe Perimeter of Square is {square_perimeter}{unit} squared.")
+        print(f"\nThe Perimeter of Square is {square_perimeter}{unit}.")
     
     elif shape_selected == "triangle":
         tri_side1 = float(input("Enter the length of Triangle's First side: "))
@@ -37,7 +37,7 @@ def calculate_perimeter(shape_selected):
 
         # Calculate the Perimeter of the Triangle
         triangle_perimeter = round(tri_side1 + tri_side2 + tri_side3, 2)
-        print(f"\nThe Perimeter of Triangle is {triangle_perimeter}{unit} squared.")
+        print(f"\nThe Perimeter of Triangle is {triangle_perimeter}{unit}.")
     
     elif shape_selected == "circle":
         radius = float(input("Enter the Circle's radius: "))
@@ -45,7 +45,7 @@ def calculate_perimeter(shape_selected):
 
         # Calculate the Perimeter of the Circle
         circle_perimeter = round(2 * math.pi * radius, 2)
-        print(f"\nThe Circumference of Circle is {circle_perimeter}{unit} squared.")            
+        print(f"\nThe Circumference of Circle is {circle_perimeter}{unit}.")            
     
     elif shape_selected == "parallelogram":
         para_side1 = float(input("Enter the length of Parallelogram's First side: "))
@@ -54,10 +54,10 @@ def calculate_perimeter(shape_selected):
 
         # Calculate the Perimeter of the Parallelogram
         parallelogram_perimeter = round(2 * (para_side1 + para_side2), 2) 
-        print(f"\nThe Perimeter of Parallelogram is {parallelogram_perimeter}{unit} squared.")        
+        print(f"\nThe Perimeter of Parallelogram is {parallelogram_perimeter}{unit}.")        
     
     else:
-        print("\nCalculator: Sorry! This shape is not available")
+        print("\nCalculator: Sorry! This shape is not available.")
 
 def Main():
     print("Calculate Area")
