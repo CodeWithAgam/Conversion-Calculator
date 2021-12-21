@@ -1,4 +1,4 @@
-# The below function claculates the Volume of a shapes
+# The below program claculates Simple Interest
 # Created by Agamdeep Singh / CodeWithAgam
 # Youtube: CodeWithAgam
 # Github: CodeWithAgam
@@ -6,13 +6,15 @@
 # Twitter: @CoderAgam001
 # Linkdin: Agamdeep Singh
 
-print("Calculate Simple Interest")
+def SI():
+    print("Calculate Simple Interest")
 
-# Ask for the inputs
-Principal = float(input("Principal Amount: "))
-RateOfInterest = float(input("Rate of Interest in Number: "))
-TimePeriod = float(input("Time Period in Number: "))
+    principal = float(input("Principal Amount: "))
+    rate = float(input("Rate of Interest in Number: "))
+    time = float(input("Time Period in Number: "))
+    currency = float(input("Enter the currency you want to use: "))
 
-# Calculate the Simple Interest and print it
-simpleInterest = (Principal * RateOfInterest * TimePeriod) / 100
-print(f"The Simple Interest is {simpleInterest}")
+    simple_interest = round((principal * rate * time) / 100, 2)
+    print(f"The Simple Interest is {currency}{simple_interest}.")
+
+SI()
