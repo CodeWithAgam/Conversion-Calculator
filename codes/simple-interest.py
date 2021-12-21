@@ -14,7 +14,7 @@ def SI():
     time = float(input("Time Period in Number: "))
     currency = float(input("Enter the currency you want to use: "))
 
-    simple_interest = round((principal * rate * time) / 100, 2)
+    simple_interest = (principal * rate * time) / 100
     print(f"The Simple Interest is {currency}{simple_interest}.")
 
 SI()
