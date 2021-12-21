@@ -6,41 +6,37 @@
 # Twitter: @CoderAgam001
 # Linkdin: Agamdeep Singh
 
-def calculate_sa(name):
-    name = name.lower()
+def calculate_tsa():
+    print("Calculate Total Surface Area!")
+    name = input("Which shape's Total Surface Area you want to calculate: ").lower()
 
     # check for the conditions
     if name == "cuboid" or name == "rectangle":
-        lenght = float(input("Length of Cuboid: "))
+        length = float(input("Length of Cuboid: "))
         breadth = float(input("Breadth of Cuboid: "))
         height = float(input("Height of Cuboid: "))
-        
-        # calculate Surface Area of rectangle
-        cuboid_sa = 2 * ((lenght * breadth) + (breadth * height) + (height * lenght))
-        print(f"The Surface Area of Cuboid is {cuboid_sa}")
+        unit = input("Enter the Measuring Unit: ")
+
+        cuboid_sa = 2 * ((length * breadth) + (breadth * height) + (height * length))
+        print(f"The Surface Area of Cuboid is {cuboid_sa}{unit} squared.")
 
     elif name == "cube" or name == "square":
-        side = float(input("Lenght of side of Cube: "))
-        
-        # calculate Surface Area of square
-        square_sa = 6 * (side * side)
-        print(f"The Surface Area of Cube is {square_sa}")
+        side = float(input("length of side of Cube: "))
+        unit = input("Enter the Measuring Unit: ")
 
+        square_sa = 6 * (side * side)
+        print(f"The Surface Area of Cube is {square_sa}{unit} squared.")
 
     elif name == "cyclinder" or name == "right circular cyclinder" or name == "circular cyclinder":
         radiusCyclinder = float(input("Cyclinder's radius: "))
         heightCyclinder = float(input("Cyclinder's height: "))
+        unit = input("Enter the Measuring Unit: ")
 
-        # calculate Surface Area of circle
         cyclinder_sa = 2 * 3.14 * radiusCyclinder * (heightCyclinder + radiusCyclinder)
-        print(f"The Surface Area of Cyclinder is {cyclinder_sa}")
+        print(f"The Surface Area of Cyclinder is {cyclinder_sa}{unit} squared.")
         
     else:
         # this message gets printed if a shape entered by the user dosen't matches to the above conditions/shapes
         print("Calculator: Sorry! This shape is not available")
 
-if __name__ == "__main__" :
-    print("Calculate Surface Area")
-    print("Calculator: Which shape's Surface Area you want to calculate?")
-    shape_name = input("User: ")
-    calculate_sa(shape_name)
+calculate_tsa()
