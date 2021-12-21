@@ -1,12 +1,11 @@
 # Conversion-Calculator
 
-Struggling to calculate Perimeter, Area, Volume, Surface Area, Curved Surface Area and Area of 4 walls of different shapes? 
-Here are few codes built in Python to solve your problem.
+> Struggling to calculate different stuff in Maths such as Area, Perimeter, Volume etc.? 
+> Here are few codes written in Python to solve your problem.
 
 ### The codes are written in simple and beginner-friendly Python with all the pre-included stuff.
 
-# All the operations are listed below:
-
+## All the operations are listed below:
 ```
      1. Perimeter
      2. Area
@@ -18,8 +17,7 @@ Here are few codes built in Python to solve your problem.
      8. Body Mass Index (BMI)
 ```
 
-# All the shapes covered in the calculators are listed below:
-
+## All the shapes covered in the calculators are listed below:
 ```
      1. Square - Perimeter/Area/Volume
      2. Rectangle - Perimeter/Area/Volume
@@ -31,9 +29,9 @@ Here are few codes built in Python to solve your problem.
      8. Cyclinder - Volume/Surface Area/Curved Surface Area
 ```
 
-# *What's New?*
-
+## *What's New?*
 ```
-     1. Updated the Body Mass Index with a new feature. (bmi.py)
+     1. Added Compound Interest. (compound-interest.py)
      2. Updated the README.md
+     3. Updated the other codes.
 ```
