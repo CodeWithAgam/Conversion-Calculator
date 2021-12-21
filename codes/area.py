@@ -9,8 +9,8 @@
 import math
 
 def calculate_area():
-
-    shape_selected = input("Which shape's Area you want to calculate: ").lower()
+    print("Calculate Area!")
+    shape_selected = input("\nWhich shape's Area you want to calculate: ").lower()
 
     # check for the conditions
     if shape_selected == "rectangle":
@@ -53,7 +53,7 @@ def calculate_area():
             unit = input("Enter the Measuring Unit: ")
 
             # calculate the area of triangle
-            triangle_area = round(math.sqrt(semi_perimeter * (semi_perimeter - side1) * (semi_perimeter - side2) * (semi_perimeter -side3)), 2)
+            triangle_area = round(math.sqrt(semi_perimeter * (semi_perimeter - side1) * (semi_perimeter - side2) * (semi_perimeter - side3)), 2)
             print(f"\nThe Area of Triangle is {triangle_area}{unit} squared.")
 
         elif triangle_type == 2:
@@ -89,7 +89,4 @@ def calculate_area():
         # this message gets printed if a shape entered by the user dosen't matches to the above conditions/shapes
         print("\nSorry! This shape is not available")
 
-def Main():
-    print("Calculate Area")
-    calculate_area()
-Main()
+calculate_area()
