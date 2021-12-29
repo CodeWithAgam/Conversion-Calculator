@@ -35,3 +35,6 @@
      2. Updated the README.md
      3. Updated the other codes.
 ```
+
+## This project is licensed under the Apache License, Version 2.0. 
+### You're open to make changes and contribute to the project, please make a pull request!
